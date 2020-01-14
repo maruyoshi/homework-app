@@ -1,0 +1,32 @@
+.main {
+  padding: 30px 250px;
+  display:block;
+}
+.main__contents {
+  background-color:$main-background-color;
+  filter: $filter-drop;
+  height: 300px;
+  margin: 0 auto;
+  padding: 10px;
+  overflow: scroll;
+}
+.main__contents__content {
+  width: 80%;
+  height: 70px;
+  margin: 0 auto 10px;
+  border: solid 1px #f6f6f6;
+  display: flex;
+  position: relative;
+}
+.main__contents__content__text {
+  color: $main-contents-color;
+  line-height: 70px;
+  margin: 0 10px;
+}
+.main__contents__content__rightBox {
+  color: $main-contents-color;
+  position: absolute;
+  font-size: 10px;
+  bottom: 5px;
+  right: 5px;
+}

@@ -5,7 +5,7 @@
   padding: 0 250px;
   line-height: 65px;
   display: flex;
-  filter: drop-shadow(3px 3px 3px rgba(100,100,100,0.6));
+  filter: $filter-drop;
 }
 
 .header__left {
