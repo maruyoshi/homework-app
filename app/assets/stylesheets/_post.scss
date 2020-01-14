@@ -1,0 +1,40 @@
+$header-font-color: #473838;
+
+* {
+  box-sizing: border-box;
+}
+
+.header {
+  background-color: #97D1e4;
+  height: 65px;
+  width: 100%;
+  padding: 0 250px;
+  line-height: 65px;
+  display: flex;
+  filter: drop-shadow(3px 3px 3px rgba(100,100,100,0.6));
+}
+
+.header__left {
+  width: 65%;
+  font-size: 30px;
+  color: $header-font-color;
+  display:block;
+}
+
+.header__right {
+  width: 35%;
+  display:flex;
+  &__userName {
+    margin-right: 30px;
+    color: $header-font-color;
+  }
+  &__logout {
+    text-decoration: none;
+    color: $header-font-color;
+  }
+}
+
+
+
+
+
