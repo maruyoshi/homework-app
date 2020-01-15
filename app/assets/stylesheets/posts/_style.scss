@@ -6,6 +6,9 @@ $filter-drop:drop-shadow(3px 3px 3px rgba(100,100,100,0.6));
 * {
   box-sizing: border-box;
 }
+a {
+  text-decoration: none;
+}
 
 .model {
   display: none;
