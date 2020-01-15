@@ -5,25 +5,26 @@
   padding: 10px;
 }
 
-%form {
+.form__message {
+  display:block;
   margin-top: 0;
 }
 
 .form__box {
   margin: 0 auto;
   width: 80%;
+
 }
 
 .form__box__textArea {
   width: 100%;
   height: 80px;
-  resize: none;
-}
-%textarea {
+  resize:none;
   min-height: 50px;
   overflow: auto;
-  vertical-align: top;
+  vertical-align: top;  
 }
+
 .form__box__submitBtn {
   display:block;
   margin: 10px auto 0 ;
