@@ -2,18 +2,17 @@
   background-color:$main-background-color;
   filter: $filter-drop;
   margin: 30px auto;
-  padding: 10px;
 }
 
 .form__message {
   display:block;
-  margin-top: 0;
+  padding: 1px 0;
+
 }
 
 .form__box {
-  margin: 0 auto;
+  margin: 30px auto;
   width: 80%;
-
 }
 
 .form__box__textArea {
