@@ -3,16 +3,13 @@
     .main__contents__content
       - @posts.each do |post|
         .main__contents__content__text
-          post.content
+          = post.user.name
         .main__contents__content__rightBox
-          post.user
+          = post.content
           %br
-          post.created_at.strftime("%Y年%m月%d日 %H時%M分")
+          = post.created_at.strftime("%Y年%m月%d日 %H時%M分")
   .form
-    %form
-      = form_for [@post] do |f|
-        = f.text_field :content, class: 'form__box__textArea', placeholder: '文字を入力（25文字以内）'
-        = f.submit '投稿する', class: 'form__box__submitBtn'  
-
-
+    = form_for @post, url: {action: 'create'} do |f|
+      = f.text_field :content, class: 'form__box__textArea', placeholder: '文字を入力（25文字以内）'
+      = f.submit '投稿する', class: 'form__box__submitBtn'   
 
