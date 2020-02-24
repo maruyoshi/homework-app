@@ -5,7 +5,7 @@
 .main__contents {
   background-color:$main-background-color;
   filter: $filter-drop;
-  height: 300px;
+  max-height: 500px;
   margin: 0 auto;
   padding: 10px;
   overflow: scroll;
