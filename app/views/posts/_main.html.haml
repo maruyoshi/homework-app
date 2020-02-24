@@ -1,15 +1,19 @@
 .main
   .main__contents
-    .main__contents__content
-      .main__contents__content__text
-        ここは仮置きで！
-      .main__contents__content__rightBox
-        test
-        %br
-        2019/10/01 10:13
-  .form
-    %form
-      .form__box
-        %textarea#article_text.form__box__textArea{:name => "article[text]", :placeholder => "文字を入力（25文字以内）"}
-        %input.form__box__submitBtn{"data-disable-with" => "投稿する", :name => "commit", :type => "submit", :value => "投稿する"}/
+    - @posts.each do |post|
+      .main__contents__content
+        .main__contents__content__text
+          = post.content
+        .main__contents__content__rightBox
+          = post.user.name
+          %br
+          = post.created_at.strftime("%Y年%m月%d日 %H時%M分")
+
+  -if user_signed_in?
+    .form
+      .form__message
+        .form__box
+          = form_for @post, url: {action: 'create'} do |f|
+            = f.text_field :content, class: 'form__box__textArea', placeholder: '文字を入力（25文字以内）'
+            = f.submit '投稿する', class: 'form__box__submitBtn'   
 
