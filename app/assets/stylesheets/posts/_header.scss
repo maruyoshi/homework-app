@@ -35,17 +35,8 @@
   .header {
     padding: 0;
   } 
-  .main {
-    padding: 30px 20px;
-    display: block;
-  }
 }
-@media (max-width: 950px) {
-  .main {
-    padding: 30px 20px;
-    display: block;
-  }
-}
+
 @media (max-width: 680px) {
   .header {
     padding: 0;
